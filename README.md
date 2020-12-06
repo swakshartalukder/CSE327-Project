@@ -14,7 +14,7 @@ Features of the Project-
 9. Another option for the employees to sign in.
 10. There every employee will be able to see the payment information of all the employees. They will be able to see their seasonal bonus, overtime, loan cut etc. and the total payment.
 
-Written in: CSS, PHP
+Written in: JavaScript, CSS, PHP
 
 Tools/Framework used: Xampp
 
