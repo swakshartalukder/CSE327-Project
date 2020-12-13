@@ -51,9 +51,12 @@
 <h1 id = "MainTitle01"> Employee Management System </h1>
 <h4 id="h4ForUser"> Admin Panel </h4>
 <br><br>
+	
+<form method="post" action="elogin.php">
+<tr><td align="center" colspan="2"><input type="submit" value="Employee Log In" id="btn1"></td></tr>
+</form>
+	
 <body background= "20.jpg">
-
-
 <br><br><br><br>
 
 <div class="login_form">
