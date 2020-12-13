@@ -12,6 +12,21 @@
   </head>
   <h1 id = "MainTitle01"> Employee Information Page </h1>
   <hr id="hr01">
+  
+  <form method="post" action="logout.php">
+<tr><td><input type="submit" value="Logout" id="btn2"></td></tr>
+</form>
+
+  <body background="30.jpg">
+    
+  <div>
+    <ul>
+      <li> <a href="employees.php"> Employees </a></li>
+      <li> <a href="department.php"> Departments </a></li>
+      <li> <a href="payment.php"> Payment Information </a></li>
+    </ul>
+  </div>
+</body>
 
   <h3 style=" margin-top: 40px; text-decoration: underline; margin-right: 500px;">  Employee Recruit Form  </h3>
 
