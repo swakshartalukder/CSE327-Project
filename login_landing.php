@@ -62,5 +62,40 @@
     <input type="submit" value="Submit " id="btn">
   </form>
 </div>
+  
+  <h3 style=" margin-top: -480px; text-decoration: underline; margin-left: 550px;">  Employee Payment Form  </h3>
+
+ <div class= "form">
+  <form style="margin-left: 300px;" action="paymentInput.php" method="post">
+    <label> Account Number </label>
+    <input type="number" name="acc_num" placeholder="" required>
+    <br>
+    <label> Employee ID </label>
+    <input type="number" name="eid" size="25" placeholder="" required>
+    <br>
+    <label> Absent </label>
+    <input type="number" name="abs" size="25" placeholder="" required>
+    <br>
+    <label> Loan Cut </label>
+    <input type="number" name="lcut" size="30" placeholder="" required>
+    <br>
+    <label> Overtime Bonus </label>
+    <input type="number" name="over" placeholder="" required>
+    <br>
+    <label> Seasonal Bonus </label>
+    <input type="number" name="season" size="25" placeholder="" required>
+    <br>
+    <label> Other Bonus </label>
+    <input type="number" name="other" size="25" placeholder="" required>
+    <br>
+    <label> Total Payment </label>
+    <input type="number" name="total" placeholder="" required>
+    <br>
+    <label> Payment Date </label>
+    <input type="Date" name="pdate" required>
+     <br>
+    <input type="submit" value="Submit " id="btn">
+  </form>
+</div>
 
 </html>
