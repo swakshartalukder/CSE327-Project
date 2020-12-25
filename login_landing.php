@@ -12,8 +12,8 @@
   </head>
   <h1 id = "MainTitle01"> Employee Information Page </h1>
   <hr id="hr01">
-  
-  <form method="post" action="logout.php">
+
+<form method="post" action="logout.php">
 <tr><td><input type="submit" value="Logout" id="btn2"></td></tr>
 </form>
 
@@ -28,10 +28,11 @@
   </div>
 </body>
 
-  <h3 style=" margin-top: 40px; text-decoration: underline; margin-right: 500px;">  Employee Recruit Form  </h3>
+
+  <h3 style=" margin-top: 40px; text-decoration: underline; margin-right: 800px;">  Employee Recruit Form  </h3>
 
  <div class= "form">
-  <form style="margin-left: -200px;" action="employeeInput.php" method="post">
+  <form style="margin-left: -370px;" action="employeeInput.php" method="post">
     <label> Employee ID </label>
     <input type="number" name="e_id" placeholder="" required>
     <br>
@@ -62,11 +63,11 @@
     <input type="submit" value="Submit " id="btn">
   </form>
 </div>
-  
-  <h3 style=" margin-top: -480px; text-decoration: underline; margin-left: 550px;">  Employee Payment Form  </h3>
+
+<h3 style=" margin-top: -480px; text-decoration: underline; margin-left: 750px;">  Employee Payment Form  </h3>
 
  <div class= "form">
-  <form style="margin-left: 300px;" action="paymentInput.php" method="post">
+  <form style="margin-left: 400px;" action="paymentInput.php" method="post">
     <label> Account Number </label>
     <input type="number" name="acc_num" placeholder="" required>
     <br>
@@ -94,6 +95,26 @@
     <label> Payment Date </label>
     <input type="Date" name="pdate" required>
      <br>
+    <input type="submit" value="Submit " id="btn">
+  </form>
+</div>
+
+<h3 style=" margin-top: -475px; text-decoration: underline; margin-right: 0px;">  Department Addition  </h3>
+
+ <div class= "form">
+  <form style="margin-left: 20px;" action="departInput.php" method="post">
+    <label> Department Number </label>
+    <input type="number" name="dnum" size="15" placeholder="" required>
+    <br>
+    <label> Department Name </label>
+    <input type="text" name="dname" size="25" placeholder="" required>
+    <br>
+    <label> Manager ID </label>
+    <input type="number" name="mid" placeholder="" required>
+    <br>
+    <label> Manager Start Date </label>
+    <input type="Date" name="mdate" size="15" placeholder="" required>
+    <br>
     <input type="submit" value="Submit " id="btn">
   </form>
 </div>
