@@ -1,4 +1,21 @@
 <?php
+session_start();
+error_reporting(0);
+$user = $_SESSION['user_name'];
+
+if($user == true)
+{
+
+}
+else
+{
+  sleep(1);
+  header('location:login.php');
+}
+
+?>
+
+<?php
 if(isset($_POST['paysearch'])){
   $valueToSearch = $_POST['paysearch'];
   $query = "SELECT * FROM `payment_info` where CONCAT(`Account_No`, `E_ID`, `Absent`, `Loan_cut`, `Overtime`, `Seasonal_Bonus`, `Other_Bonus`, `Total_Payment`, `Payment_Date`) LIKE '%".$valueToSearch."%'";
