@@ -53,10 +53,13 @@ if($total!=0)
 		<td>".$result['Salary']."</td>
 		<td>".$result['Gender']."</td>
 		</tr>
-
-
 		";
 	}
+}
+	
+else
+{
+	echo "No Records Found";
 }
 
 ?>
