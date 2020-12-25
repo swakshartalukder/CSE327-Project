@@ -14,7 +14,7 @@ Searching employee information.
 Sorting employee information.
 Another option for the employees to sign in.
 There every employee will be able to see the payment information of all the employees. They will be able to see their seasonal bonus, overtime, loan cut etc. and the total payment.
-Written in: JavaScript, CSS, PHP
+Written in: JavaScript, CSS, PHP, HTML
 
 Tools/Framework used: Xampp
 
