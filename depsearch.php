@@ -1,4 +1,21 @@
 <?php
+session_start();
+error_reporting(0);
+$user = $_SESSION['user_name'];
+
+if($user == true)
+{
+
+}
+else
+{
+  sleep(1);
+  header('location:login.php');
+}
+
+?>
+
+<?php
 if(isset($_POST['depsearch'])){
   $valueToSearch = $_POST['depsearch'];
   $query = "SELECT * FROM `department` where CONCAT(`Depart_Number`, `Depart_Name`, `Manager_ID`, `Manager_StartDate`) LIKE '%".$valueToSearch."%'";
