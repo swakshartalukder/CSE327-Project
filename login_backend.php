@@ -4,6 +4,8 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 $login_status = "Unsuccessful";
 
+session_start();
+
 if(trim($username) == "" || trim($password) == "" ){
   echo "Please enter a valid username."."<br>";
 
@@ -25,6 +27,7 @@ else {
 }
 
 if($login_status == "successful"){
+  $_SESSION['user_name'] = $password;
   $url = "http://www.empmansys.com/CSE327-Project/login_landing.php";
   header("Refresh: 2; URL= $url");
 }
@@ -33,8 +36,5 @@ else{
   $url = "http://www.empmansys.com/CSE327-Project/login.php";
   header("Refresh: 2; URL= $url");
 }
-
-
-
 
 ?>
