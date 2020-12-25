@@ -1,4 +1,21 @@
 <?php
+session_start();
+error_reporting(0);
+$user = $_SESSION['user_name'];
+
+if($user == true)
+{
+
+}
+else
+{
+  sleep(1);
+  header('location:login.php');
+}
+
+?>
+
+<?php
 include("db_connection.php");
 
 $dnum = $_POST["dnum"];
