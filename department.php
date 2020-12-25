@@ -46,6 +46,11 @@ if($total!=0)
 		";
 	}
 }
+	
+else
+{
+	echo "No Records Found";
+}
 
 ?>
 </table>
