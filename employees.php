@@ -9,7 +9,7 @@
 <table style="width:100%;">
 
 
-   <form style="margin-top: 5%;" action="../CSE327_Project/searchin.php" method= "post">
+   <form style="margin-top: 5%;" action="../CSE327-Project/searchin.php" method= "post">
 
 <input type="text" name="search" placeholder="Search">
 <input type="submit" value="Search" style="margin-top: 0.0000005%; color: green;">
