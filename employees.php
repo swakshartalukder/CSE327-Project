@@ -20,7 +20,28 @@ else
 <head>
 	<title>All Data of Employees</title>
 	<link rel="stylesheet" href="../style.css">
+          <form method="post" action="login_landing.php">
+  	      <input type="submit" value="HOME" id="btn1">
+            </form>
 </head>
+
+<style>
+#btn1
+{
+        background-color: black;
+	color: white;
+	height: 30px;
+	width: 100px;
+	display: inline-block;
+	border-radius: 25px;
+	font-size: 15px;
+	font-style: all;
+	text-align: center;
+	margin-left: 700px;
+	margin-top: 0px;
+}
+</style>
+
 <body background="50.jpg">
 	<h1> All Data of Employees </h1> <hr> <br>
 <table style="width:100%;">
@@ -73,7 +94,6 @@ if($total!=0)
 		";
 	}
 }
-	
 else
 {
 	echo "No Records Found";
