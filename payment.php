@@ -20,6 +20,9 @@ else
 <head>
 	<title>Information of Payment</title>
 	<link rel="stylesheet" href="../style.css">
+          <form method="post" action="login_landing.php">
+  	      <input type="submit" value="HOME" id="btn1">
+            </form>
 </head>
 
 <style>
@@ -40,6 +43,22 @@ else
   font-size: 15px;
   height: 25px;
 }
+
+#btn1
+{
+        background-color: black;
+	color: white;
+	height: 30px;
+	width: 100px;
+	display: inline-block;
+	border-radius: 25px;
+	font-size: 15px;
+	font-style: all;
+	text-align: center;
+	margin-left: 700px;
+	margin-top: 0px;
+}
+
 </style>
 
 <body background="50.jpg">
@@ -47,7 +66,7 @@ else
 <table style="width:100%;">
 
 
-   <form style="margin-top: 5%;" action="../CSE327_Project/paysearch.php" method= "post">
+   <form style="margin-top: 5%;" action="../CSE327-Project/paysearch.php" method= "post">
 
 <input type="text" name="paysearch" placeholder="Search">
 <input type="submit" value="Search" style="margin-top: 0.0000005%; color: green;">
