@@ -51,8 +51,32 @@ else
 
 <input type="text" name="search" placeholder="Search">
 <input type="submit" value="Search" style="margin-top: 0.0000005%; color: green;">
-<br><br>
 </form>
+
+<form action="sortlist.php" method="post">
+	<input type="submit" name="nasc" value="Name Ascending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 150px;">
+</form>
+
+<form action="sortlist.php" method="post">
+	<input type="submit" name="ndsc" value="Name Descending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+
+<form action="sortlist.php" method="post">
+	<input type="submit" name="basc" value="Birth Date Ascending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+
+<form action="sortlist.php" method="post">
+	<input type="submit" name="bdsc" value="Birth Date Descending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+
+<form action="sortlist.php" method="post">
+	<input type="submit" name="sasc" value="Salary Ascending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+
+<form action="sortlist.php" method="post">
+	<input type="submit" name="sdsc" value="Salary Descending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+<br><br>
 </table>
 
 <table border="3" cellspacing="9" style="text-align: center;">
