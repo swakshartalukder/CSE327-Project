@@ -26,23 +26,6 @@ else
 </head>
 
 <style>
-#editbtn
-{
-  background-color: green;
-  color: white;
-  width: 130px;
-  font-size: 15px;
-  height: 25px;
-}
-
-#deletebtn
-{
-  background-color: red;
-  color: white;
-  width: 130px;
-  font-size: 15px;
-  height: 25px;
-}
 
 #btn1
 {
@@ -70,8 +53,33 @@ else
 
 <input type="text" name="paysearch" placeholder="Search">
 <input type="submit" value="Search" style="margin-top: 0.0000005%; color: green;">
-<br><br>
 </form>
+
+<form action="paysortlist.php" method="post">
+	<input type="submit" name="iasc" value="ID Ascending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 150px;">
+</form>
+
+<form action="paysortlist.php" method="post">
+	<input type="submit" name="idsc" value="ID Descending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+
+<form action="paysortlist.php" method="post">
+	<input type="submit" name="pasc" value="Payment Ascending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+
+<form action="paysortlist.php" method="post">
+	<input type="submit" name="pdsc" value="Payment Descending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+
+<form action="paysortlist.php" method="post">
+	<input type="submit" name="dasc" value="Date Ascending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+
+<form action="paysortlist.php" method="post">
+	<input type="submit" name="ddsc" value="Date Descending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+<br><br>
+
 </table>
 
 <table border="3" cellspacing="9" style="text-align: center;">
