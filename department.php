@@ -51,8 +51,33 @@ else
 
 <input type="text" name="depsearch" placeholder="Search">
 <input type="submit" value="Search" style="margin-top: 0.0000005%; color: green;">
-<br><br>
 </form>
+
+<form action="depsortlist.php" method="post">
+	<input type="submit" name="dnasc" value="Name Ascending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 50px;">
+</form>
+
+<form action="depsortlist.php" method="post">
+	<input type="submit" name="dndsc" value="Name Descending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+
+<form action="depsortlist.php" method="post">
+	<input type="submit" name="miasc" value="Manager ID Ascending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+
+<form action="depsortlist.php" method="post">
+	<input type="submit" name="midsc" value="Manager ID Descending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+
+<form action="depsortlist.php" method="post">
+	<input type="submit" name="masc" value="Manager Date Ascending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+
+<form action="depsortlist.php" method="post">
+	<input type="submit" name="mdsc" value="Manager Date Descending" style="margin-top: -100px; background-color: blue; color: white; margin-left: 10px;">
+</form>
+<br><br>
+
 </table>
 
 <table border="3" cellspacing="9" style="text-align: center;">
