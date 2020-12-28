@@ -27,6 +27,15 @@ else
 
 <style>
 
+#editbtn
+{
+  background-color: green;
+  color: white;
+  width: 130px;
+  font-size: 15px;
+  height: 25px;
+}
+
 #btn1
 {
         background-color: black;
@@ -94,6 +103,7 @@ else
 	<th>Other Bonus</th>
 	<th>Total Payment</th>
 	<th>Payment Date</th>
+	<th colspan="2" align="center">Operations</th>
 </tr>
 
 <?php
@@ -117,6 +127,7 @@ if($total!=0)
 		<td>".$result['Other_Bonus']."</td>
 		<td>".$result['Total_Payment']."</td>
 		<td>".$result['Payment_Date']."</td>
+		<td><a href = 'payupdate.php?an=".$result['Account_No']."&ed=".$result['E_ID']."&abs=".$result['Absent']."&lc=".$result['Loan_cut']."&ot=".$result['Overtime']."&sb=".$result['Seasonal_Bonus']."&ob=".$result['Other_Bonus']."&tp=".$result['Total_Payment']."&pd=".$result['Payment_Date']."'><input type='submit' id='editbtn' value='Edit/Update'></td>
 		</tr>
 		";
 	}
