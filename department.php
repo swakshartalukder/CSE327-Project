@@ -26,6 +26,16 @@ else
 </head>
 
 <style>
+
+#editbtn
+{
+  background-color: green;
+  color: white;
+  width: 130px;
+  font-size: 15px;
+  height: 25px;
+}
+
 #btn1
 {
         background-color: black;
@@ -87,6 +97,7 @@ else
 	<th>Department Name</th>
 	<th>Manager ID</th>
 	<th>Manager Start Date</th>
+        <th colspan="2" align="center">Operations</th>
 </tr>
 
 <?php
@@ -105,6 +116,8 @@ if($total!=0)
 		<td>".$result['Depart_Name']."</td>
 		<td>".$result['Manager_ID']."</td>
 		<td>".$result['Manager_StartDate']."</td>
+		<td><a href = 'depupdate.php?dn=".$result['Depart_Number']."&dnm=".$result['Depart_Name']."&mid=".$result['Manager_ID']."&md=".$result['Manager_StartDate']."'><input type='submit' id='editbtn' value='Edit/Update'></td>
+                </tr>
 		";
 	}
 }
