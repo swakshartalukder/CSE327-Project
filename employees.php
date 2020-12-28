@@ -26,6 +26,16 @@ else
 </head>
 
 <style>
+
+#editbtn
+{
+  background-color: green;
+  color: white;
+  width: 130px;
+  font-size: 15px;
+  height: 25px;
+}
+
 #btn1
 {
         background-color: black;
@@ -91,6 +101,7 @@ else
 	<th>Birth Date</th>
 	<th>Salary</th>
 	<th>Gender</th>
+        <th colspan="2" align="center">Operations</th>
 </tr>
 
 <?php
@@ -114,6 +125,7 @@ if($total!=0)
 		<td>".$result['Birth_Date']."</td>
 		<td>".$result['Salary']."</td>
 		<td>".$result['Gender']."</td>
+		<td><a href = 'update.php?eid=".$result['Employee_ID']."&fn=".$result['Fname']."&ln=".$result['Lname']."&ad=".$result['Address']."&pn=".$result['Phone_No']."&em=".$result['Email']."&bd=".$result['Birth_Date']."&sal=".$result['Salary']."&gen=".$result['Gender']."'><input type='submit' id='editbtn' value='Edit/Update'></td>
 		</tr>
 		";
 	}
