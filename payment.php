@@ -36,6 +36,15 @@ else
   height: 25px;
 }
 
+#deletebtn
+{
+  background-color: red;
+  color: white;
+  width: 130px;
+  font-size: 15px;
+  height: 25px;
+}
+
 #btn1
 {
         background-color: black;
@@ -128,6 +137,7 @@ if($total!=0)
 		<td>".$result['Total_Payment']."</td>
 		<td>".$result['Payment_Date']."</td>
 		<td><a href = 'payupdate.php?an=".$result['Account_No']."&ed=".$result['E_ID']."&abs=".$result['Absent']."&lc=".$result['Loan_cut']."&ot=".$result['Overtime']."&sb=".$result['Seasonal_Bonus']."&ob=".$result['Other_Bonus']."&tp=".$result['Total_Payment']."&pd=".$result['Payment_Date']."'><input type='submit' id='editbtn' value='Edit/Update'></td>
+		<td><a href = 'paydel.php?an=".$result['Account_No']."' onclick='return checkDelete()'><input type='submit' id='deletebtn' value='Delete'></td>
 		</tr>
 		";
 	}
@@ -139,6 +149,13 @@ else
 
 ?>
 </table>
+
+<script>
+	function checkDelete()
+	{
+		return confirm('Are You Sure You Want to Delete This Record?');
+	}
+</script>
 
 </body>
 </html>
