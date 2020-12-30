@@ -36,6 +36,15 @@ else
   height: 25px;
 }
 
+#deletebtn
+{
+  background-color: red;
+  color: white;
+  width: 130px;
+  font-size: 15px;
+  height: 25px;
+}
+
 #btn1
 {
         background-color: black;
@@ -117,6 +126,7 @@ if($total!=0)
 		<td>".$result['Manager_ID']."</td>
 		<td>".$result['Manager_StartDate']."</td>
 		<td><a href = 'depupdate.php?dn=".$result['Depart_Number']."&dnm=".$result['Depart_Name']."&mid=".$result['Manager_ID']."&md=".$result['Manager_StartDate']."'><input type='submit' id='editbtn' value='Edit/Update'></td>
+		<td><a href = 'depdel.php?dn=".$result['Depart_Number']."' onclick='return checkDelete()'><input type='submit' id='deletebtn' value='Delete'></td>
                 </tr>
 		";
 	}
@@ -128,5 +138,13 @@ else
 
 ?>
 </table>
+
+<script>
+	function checkDelete()
+	{
+		return confirm('Are You Sure You Want to Delete This Record?');
+	}
+</script>
+
 </body>
 </html>
