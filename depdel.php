@@ -27,7 +27,7 @@ if($data)
 {
 	echo "<script>alert('Record Deleted from Database')</script>";
 	?>
-	<META HTTP-EQUIV = "Refresh" CONTENT = "0; URL = http://www.empmansys.com/CSE327_Project/department.php">
+	<META HTTP-EQUIV = "Refresh" CONTENT = "0; URL = http://www.empmansys.com/CSE327-Project/department.php">
 	<?php
 }
 else
